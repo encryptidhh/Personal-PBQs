@@ -1,2 +1,2 @@
 # Personal-PBQs
-Set of simulations for common IT helpdesk tasks - inspired by Crucial Exam's PBQs for the CompTIA A+ certification.
+As the description says, this repo stores HTML files to make static-site helpdesk simulations. These are mainly designed around the CompTIA A+ certification but are relevant for similar helpdesk training.
