@@ -1,0 +1,46 @@
+.authconfig {
+    position: sticky;
+    text-align: left;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+    outline: 1px solid #000000;
+    outline-offset: -7.5px;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 10px;
+ }
+
+.container {
+    display: block;
+    text-align: center
+    padding: 20px;
+    border: 2.5px solid #000000;
+    background-color: #FFFFFF;
+}
+
+.title {
+    text-align: left;
+    font-weight: 700
+ }
+
+.submit-button {
+    padding: 10px 20px; /* Add padding */
+    border: 2px solid #60C66D; /* Add border */
+    outline-offset: -4.5px; /* Adjust outline offset */
+    background-color: #f8f9fa; /* Add background color */
+    cursor: pointer; /* Add cursor pointer */
+    font-size: 12px; /* Adjust font size */
+    transition: background-color 0.3s ease, border 0.3s ease; /* Add transition for hover effect */
+    border-radius: 18px; /* Add border-radius for rounded corners */
+    margin: 10px auto; /* Center the button and add margin */
+    display: block; /* Make the button a block-level element */
+    transition: background-color 0.3s ease, border 0.3s ease; /* Add transition for hover effect */
+    }
+
+.submit-button:hover {
+    background-color: #e2e6ea; /* Change background color on hover */
+    border-color: #333333; /* Change border color on hover */
+}
