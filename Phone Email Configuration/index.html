@@ -6,82 +6,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Smartphone Email Configuration Lab</h1>
-    <p>You are configuring a mobile device's email application for a user named Jane Doe.
-        Their email address is their first name, a period, and their last name followed by
-        <code style="color: #ea5c9e;"><span style="background-color: #e4e6e8;">@personalpbqs.com</span></code>, and their password is <code style="color: #ea5c9e;"><span style="background-color: #e4e6e8;">SecurePass456</span></code>.
-        Use the following information to configure the email servers:
-        <ul>
-            <li>SMTP: smtp.pbqserver.com</li>
-            <li>POP3: pop.pbqserver.com</li>
-        </ul>
-        For the email server port numbers, use the default port number for the respective protocol.
-        Use the strongest encryption option available for both.<br>
-        When you're done, click on the <strong>"Submit for grading"</strong>
-        button to submit your answers. <br> <br>
-        <strong>Note: You need to determine which is incoming/outgoing based on the protocol.</strong>
-    </p>
-    <div class="container">
-        <div class="auth-part">
-            <div class="title-container">
-                <h4 class="title">Authentication</h4>
-                <label for="email" class="email-input">Email:</label>
-                <input type="email" id="email" name="email" ><br><br>
-                <label for="password" class="password-input">Password:</label>
-                <input type="password" id="password" name="password" ><br><br>
+    <div class="description">
+        <h1>Smartphone Email Configuration</h1>
+        <p>You are configuring a mobile device's email application for a user named Jane Doe.
+            Their email address is their first name, a period, and their last name followed by
+            <code style="color: #ea5c9e;"><span style="background-color: #e4e6e8;">@personalpbqs.com</span></code>. Their password is <code style="color: #ea5c9e;"><span style="background-color: #e4e6e8;">SecurePass456</span></code>.
+            Use the following information to configure the email servers:
+            <ul>
+                <li>SMTP: smtp.pbqserver.com</li>
+                <li>POP3: pop.pbqserver.com</li>
+            </ul>
+            For the email server port numbers, use the default port number for the respective protocol.
+            Use the strongest encryption option available for both.<br>
+            When you're done, click on the <strong>"Submit for grading"</strong>
+            button to submit your answers. <br> <br>
+            <strong>Note: You'll need to determine which is incoming/outgoing based on the protocol.</strong>
+        </p>
+    </div>
+    <div class="tablet-container">
+        <div class="container">
+            <div class="auth-part">
+                <div class="section">
+                    <h4 class="section-title">Authentication</h4>
+                    <div class="section-content">
+                        <label for="email" class="email-input">Email:</label>
+                        <input type="email" id="email" name="email" class="email-field" ><br><br>
+                        <label for="password" class="password-input">Password:</label>
+                        <input type="text" id="password" name="password" class="password-field"><br><br>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="config-part">
-            <div class="title-container">
-                <h4 class="title">Incoming Server Configuration</h4>
+            <div class="config-part">
+                <div class="title-container">
+                    <h4 class="title">Incoming Server Configuration</h4>
+                </div>
+                <label for="incomingServer"></label>
+                <p>Protocol</p>
+                <select id="incomingServer" type="incomingServer" class="form-control">
+                    <option value="1">--Select protocol--</option>
+                    <option value="2">IMAP</option>
+                    <option value="3">POP</option>
+                    <option value="4">SMTP</option>
+                </select>
+                <p>Encryption</p>
+                <label for="incomingServerEncryption"></label>
+                <select id="incomingServerEncryption" type="incomingServer" class="form-control">
+                    <option value="1">--Select encryption--</option>
+                    <option value="2">TLS</option>
+                    <option value="3">SSL</option>
+                    <option value="4">None</option>
+                </select>
+                <p>Server Address</p>
+                <input class="server-address" type="text" id="incomingServerAddress" name="incomingServerAddress" class="form-control">
+                <p>Server Port</p>
+                <input class="server-port" type="text" id="incomingServerPort" name="incomingServerPort" class="form-control">
             </div>
-            <label for="incomingServer"></label>
-            <p>Protocol</p>
-            <select id="incomingServer" type="incomingServer" class="form-control">
-                <option value="1">--Select protocol--</option>
-                <option value="2">IMAP</option>
-                <option value="3">POP</option>
-                <option value="4">SMTP</option>
-            </select>
-            <p>Encryption</p>
-            <label for="incomingServerEncryption"></label>
-            <select id="incomingServerEncryption" type="incomingServer" class="form-control">
-                <option value="1">--Select encryption--</option>
-                <option value="2">TLS</option>
-                <option value="3">SSL</option>
-                <option value="4">None</option>
-            </select>
-            <p>Server Address</p>
-            <input type="text" id="incomingServerAddress" name="incomingServerAddress" class="form-control">
-            <p>Server Port</p>
-            <input type="text" id="incomingServerPort" name="incomingServerPort" class="form-control">
-        </div>
-        <div class="config-part">
-            <div class="title-container">
-                <h4 class="title">Outgoing Server Configuration</h4>
+            <div class="config-part">
+                <div class="title-container">
+                    <h4 class="title">Outgoing Server Configuration</h4>
+                </div>
+                <label for="outgoingServer"></label>
+                <p>Protocol</p>
+                <select id="outgoingServer" type="incomingServer" class="form-control">
+                    <option value="1">--Select protocol--</option>
+                    <option value="2">IMAP</option>
+                    <option value="3">POP</option>
+                    <option value="4">SMTP</option>
+                </select>
+                <p>Encryption</p>
+                <label for="outgoingServerEncryption"></label>
+                <select id="outgoingServerEncryption" type="incomingServer" class="form-control">
+                    <option value="1">--Select encryption--</option>
+                    <option value="2">TLS</option>
+                    <option value="3">SSL</option>
+                    <option value="4">None</option>
+                </select>
+                <p>Server Address</p>
+                <input class="second-address" type="text" id="outgoingServerAddress" name="incomingServerAddress" class="form-control">
+                <p>Server Port</p>
+                <input class="second-port" type="text" id="outgoingServerPort" name="incomingServerPort" class="form-control">
             </div>
-            <label for="outgoingServer"></label>
-            <p>Protocol</p>
-            <select id="outgoingServer" type="incomingServer" class="form-control">
-                <option value="1">--Select protocol--</option>
-                <option value="2">IMAP</option>
-                <option value="3">POP</option>
-                <option value="4">SMTP</option>
-            </select>
-            <p>Encryption</p>
-            <label for="outgoingServerEncryption"></label>
-            <select id="outgoingServerEncryption" type="incomingServer" class="form-control">
-                <option value="1">--Select encryption--</option>
-                <option value="2">TLS</option>
-                <option value="3">SSL</option>
-                <option value="4">None</option>
-            </select>
-            <p>Server Address</p>
-            <input type="text" id="outgoingServerAddress" name="incomingServerAddress" class="form-control">
-            <p>Server Port</p>
-            <input type="text" id="outgoingServerPort" name="incomingServerPort" class="form-control">
+         <input id="submitButton" type="submit" value="Submit for grading" class="submit-button">
         </div>
-     <input type="submit" value="Submit for grading" class="submit-button">
     </div>
 </body>
 </html>
