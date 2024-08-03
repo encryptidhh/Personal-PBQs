@@ -1,4 +1,23 @@
-.auth-part {
+html {
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+    background-color: #f8f8f8;
+}
+
+.tablet-container {
+    background:  /*url("phone-mockup-final.png") */  no-repeat center center;
+    background-size: contain;
+    width: 100%; /* Adjust as necessary */
+    height: 100%; /* Adjust as necessary */
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-part, .config-part {
     position: sticky;
     text-align: left;
     top: 0;
@@ -8,17 +27,7 @@
     outline-offset: -7.5px;
 }
 
-.config-part {
-    position: sticky;
-    text-align: left;
-    top: 0;
-    padding: 10px;
-    z-index: 2;
-    outline: 1px solid #000000;
-    outline-offset: -7.5px;
-}
-
-.title-container {
+.section {
     text-align: left;
     margin-bottom: 10px;
 }
@@ -30,29 +39,41 @@
     border: 2.5px solid #000000;
     background-color: #FFFFFF;
     overflow: hidden; /* Prevents margin collapse */
+    border-radius: 10px;
 }
 
-.title {
+.section-title  {
     text-align: left;
     font-weight: 700;
+}
+
+.email-field, .password-field, .server-address, .server-port, .second-address, .second-port {
+    font-family: "Century Gothic", sans-serif;
+    font-style: normal;
+    border-radius: 5.5px;
+    border: 0.3px solid #000000
 }
 
 .submit-button {
     padding: 10px 20px; /* Add padding */
     border: 2px solid #60C66D; /* Add border */
+    color: #60C66D;
     outline-offset: -4.5px; /* Adjust outline offset */
-    background-color: #f8f9fa; /* Add background color */
+    background-color: #ffffff; /* Add background color */
     cursor: pointer; /* Add cursor pointer */
-    font-size: 12px; /* Adjust font size */
+    font-size: 15px; /* Adjust font size */
     transition: background-color 0.3s ease, border 0.3s ease; /* Add transition for hover effect */
-    border-radius: 18px; /* Add border-radius for rounded corners */
+    border-radius: 20px; /* Add border-radius for rounded corners */
     margin: 10px auto; /* Center the button and add margin */
     display: block; /* Make the button a block-level element */
+    font-family: "Century Gothic", sans-serif;
+    font-style: normal;
+
 }
 
 .submit-button:hover {
-    background-color: #e2e6ea; /* Change background color on hover */
-    border-color: #333333; /* Change border color on hover */
+    background-color: #60C66D; /* Changes background color on hover */
+    color: #FFFFFF /* Changes text color on hover */
 }
 
 nav {
