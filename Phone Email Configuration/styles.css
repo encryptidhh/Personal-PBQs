@@ -55,17 +55,17 @@ html {
 }
 
 .submit-button {
-    padding: 10px 20px; /* Add padding */
-    border: 2px solid #60C66D; /* Add border */
+    padding: 10px 20px; /* Adds padding */
+    border: 2px solid #60C66D; /* Adds border */
     color: #60C66D;
-    outline-offset: -4.5px; /* Adjust outline offset */
+    outline-offset: -4.5px; /* Adjusts outline offset */
     background-color: #ffffff; /* Add background color */
-    cursor: pointer; /* Add cursor pointer */
-    font-size: 15px; /* Adjust font size */
+    cursor: pointer; /* Adds cursor pointer */
+    font-size: 15px; /* Adjusts font size */
     transition: background-color 0.3s ease, border 0.3s ease; /* Add transition for hover effect */
-    border-radius: 20px; /* Add border-radius for rounded corners */
-    margin: 10px auto; /* Center the button and add margin */
-    display: block; /* Make the button a block-level element */
+    border-radius: 20px; /* Adds border-radius for rounded corners */
+    margin: 10px auto; /* Centers the button and add margin */
+    display: block; /* Makes the button a block-level element */
     font-family: "Century Gothic", sans-serif;
     font-style: normal;
 
